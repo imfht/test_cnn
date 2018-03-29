@@ -10,7 +10,7 @@ Because of BTDashboard only works on python2, so this project only support pytho
 ### First
 clone this repo.
 ```bash
-git clone https://github.com/sqlmapproject/sqlmap
+git clone https://github.com/fiht/test_cnn
 ```
 ### Requirements
 All packages we need is at `requirements.txt` , I strongly suggest you use virtualenv manage packages.
