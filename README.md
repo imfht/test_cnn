@@ -27,5 +27,5 @@ I've trained the model with 1024 epoll. you can use it directly. Run `python pre
 ## Wanner know more?
 [visit my blog](https://blog.fht.im/15220580960875.html) get more detail.
 
-## 其他语言
-[查看中文版README]()
+## Other Language
+[查看中文版README](https://github.com/fiht/test_cnn/blob/master/README.md)
