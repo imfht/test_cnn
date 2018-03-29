@@ -10,41 +10,13 @@
 
 import math
 import random
+import sys
 
-import numpy as np
 from PIL import Image, ImageDraw, ImageFont
 
 number = "3456789"
 srcLetter = "qwertyuipasdfghjkzxcvbnm"
 srcUpper = srcLetter.upper()
-
-
-class Genner:
-    characters = number + srcLetter + srcUpper
-    classes = len(characters)
-    __width = 64  # 画布宽度
-    __heigth = 24  # 画布高度
-    __char_num = 4
-
-    def gen_captcha(self, batch_size=50):
-        X = np.zeros([batch_size, self.__heigth, self.__width, 1])
-        Y = np.zeros([batch_size, self.__char_num, self.classes])
-
-        while True:
-            for i in range(batch_size):
-                v_code = vieCode()
-                image, captcha_str = v_code.GetCodeImage()
-                image = image.convert('L')
-                image.show()
-                np_img = np.array(image.getdata())
-                X[i] = np.reshape(np_img, [self.__heigth, self.__width, 1]) / 255.0
-                for j, ch in enumerate(captcha_str):
-                    Y[i, j, self.characters.find(ch)] = 1
-            Y = np.reshape(Y, (batch_size, self.__char_num * self.classes))
-            yield X, Y
-
-    def get_parameter(self):
-        return self.__width, self.__heigth, self.__char_num, self.characters, self.classes
 
 
 class vieCode:
@@ -161,8 +133,10 @@ class vieCode:
 
 
 if __name__ == '__main__':
-    code = vieCode()
-    t = code.GetCodeImage()
-    # t[0].save(open('./%s_small.png' % ''.join(t[1]), 'w+'))
-       # t[0].resize((64, 24), Image.ANTIALIAS).save(open('./%s_small.png' % ''.join(t[1]), 'w+'))
-    pass
+    if len(sys.argv) < 1:
+        print('python gencode.py [count of captcha you want to gen]')
+    for i in range(sys.argv[1]):
+        code = vieCode()
+        t = code.GetCodeImage()
+        t[0].save(open('./%s.png' % ''.join(t[1]), 'w+'))
+        t[0].close()
