@@ -9,7 +9,7 @@ test_cnn基于keras，可以用来破解宝塔面板的验证码。基于深度�
 ### 第一步
 下载 test_cnn 到本地
 ```bash
-git clone https://github.com/sqlmapproject/sqlmap
+git clone https://github.com/fiht/test_cnn
 ```
 
 ### python 模块依赖
