@@ -26,3 +26,6 @@ git clone https://github.com/fiht/test_cnn
 
 ## 实际效果
 ![](https://github.com/fiht/test_cnn/raw/master/static/1581522318375_.pic_hd.jpg)
+
+## 网页预览版 [bt.dev.fht.im](https://bt.dev.fht.im) 效果如下
+![](https://ws1.sinaimg.cn/large/0062TDWsly1fpxbt7rlp3j327s0w044d.jpg)

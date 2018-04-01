@@ -30,5 +30,9 @@ I've trained the model with 1024 epoll. you can use it directly. Run `python pre
 ## Result
 ![](https://github.com/fiht/test_cnn/raw/master/static/1581522318375_.pic_hd.jpg)
 
+
 ## Other Language
 [查看中文版README](https://github.com/fiht/test_cnn/blob/master/README_CN.md)
+
+## a web interface is at [bt.dev.fht.im](https://bt.dev.fht.im)
+![](https://ws1.sinaimg.cn/large/0062TDWsly1fpxbt7rlp3j327s0w044d.jpg)
