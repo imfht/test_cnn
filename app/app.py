@@ -59,7 +59,7 @@ def upload():
             img_name = vector_to_code(predict[0])
             return img_name
         except Exception as err:
-            return err
+            return str(err)
     return None
 
 
