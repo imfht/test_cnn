@@ -22,7 +22,7 @@ git clone https://github.com/fiht/test_cnn
 我已经训练好了我的模型，你可以直接使用`predict.py`预测验证码而不是从头自己训练。
 
 ## 想知道更多吗？
-访问[我的博客](https://blog.fht.im/15220580960875.html) 获取更多资料。
+访问[我的博客](https://fht.im/15220580960875.html) 获取更多资料。
 
 ## 实际效果
 ![](https://github.com/fiht/test_cnn/raw/master/static/1581522318375_.pic_hd.jpg)
