@@ -4,7 +4,7 @@ import os
 
 # Flask utils
 from flask import Flask, request, render_template
-from gevent.wsgi import WSGIServer
+from gevent.pywsgi import WSGIServer
 # Keras
 from keras.applications.imagenet_utils import preprocess_input
 from keras.preprocessing import image

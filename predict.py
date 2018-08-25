@@ -46,7 +46,7 @@ def main():
     elif options.input:
         predict = model.predict(file2xtrain(file_name=options.input))
         img_name = vector_to_code(predict[0])
-        print 'The input picture seems %s, am I right? ٩꒰ ⑅>∀<⑅ ꒱۶﻿' % img_name
+        print('The input picture seems %s, am I right? ٩꒰ ⑅>∀<⑅ ꒱۶﻿' % img_name)
     elif options.random:
         x_test, y_test = get_test_batch()
         predict = model.predict(x_test)
