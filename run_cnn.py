@@ -123,7 +123,7 @@ if __name__ == '__main__':
                   metrics=['accuracy'])
 
     for i in range(64):
-        model.fit_generator(generator=get_batch(), steps_per_epoch=20)
+        model.fit_generator(generator=get_batch(), steps_per_epoch=200)
         x_test, y_test = get_test_batch()
         predict = model.predict(x_test)
         predict_char = vector_to_code(predict[0])
