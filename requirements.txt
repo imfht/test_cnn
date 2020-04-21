@@ -3,7 +3,7 @@ Keras==2.1.5
 Markdown==2.6.11
 Pillow==5.0.0
 PyYAML==3.12
-Werkzeug==0.14.1
+Werkzeug==0.15.3
 absl-py==0.1.11
 astor==0.6.2
 backports.weakref==1.0.post1
