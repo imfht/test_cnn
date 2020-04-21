@@ -1,7 +1,7 @@
 Flask
 Keras==2.1.5
 Markdown==2.6.11
-Pillow==5.0.0
+Pillow==6.2.0
 PyYAML==3.12
 Werkzeug==0.14.1
 absl-py==0.1.11
