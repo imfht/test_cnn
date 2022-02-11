@@ -17,7 +17,7 @@ html5lib==0.9999999
 mock==2.0.0
 numpy==1.14.2
 pbr==3.1.1
-protobuf==3.5.2
+protobuf==3.15.0
 scipy==1.0.1
 six==1.11.0
 tensorboard==1.6.0
